@@ -4,6 +4,7 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -40,7 +41,7 @@ const questions = [
         type: 'checkbox',
         name: 'License',
         message: 'Please choose the license if required:',
-        choice : [
+        choices : [
             'Boost Software License 1.0',
             'Mozilla Public License 2.0',
             'The MIT License',
@@ -63,10 +64,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (error) => error ? console.log(error) : console.log('Readme file successfully created'));
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+        .prompt(questions)
+        .then((answers) => { 
+            console.log('answers captured');
+            writeToFile(answers);
+        })
+    
+}
 
 // Function call to initialize app
 init();
