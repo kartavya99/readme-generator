@@ -65,16 +65,16 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (error) => error ? console.log(error) : console.log('Readme file successfully created'));
+    fs.writeFile('./utils/READMEME.md', data, (error) => error ? console.log(error) : console.log('Readme file successfully created'));
 };
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
         .prompt(questions)
-        .then((answers) => { 
+        .then((data) => { 
             console.log('answers captured');
-            writeToFile(answers);
+            writeToFile('Readme.md', generateMarkdown(data));
         })
     
 }
