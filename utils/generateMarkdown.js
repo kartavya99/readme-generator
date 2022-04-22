@@ -67,13 +67,13 @@ function generateMarkdown(data) {
 
   
   ## Table of Contents
-
-    * [License](#license)
-    * [Installation](#installation)
-    * [Usage](#Usage)
-    * [How to Contribute](#how-to-contribute)
-    * [Test](#tests)
-    * [Question??](#questions)
+  *[License](#license)
+  *[Description](#Description)
+  *[Installation](#installation)
+  *[Usage](#Usage)
+  *[How to Contribute](#how-to-contribute)
+  *[Test](#tests)
+  *[Question??](#questions)
 
   ## License
   ${renderLicenseSection(data.license)}
@@ -97,8 +97,8 @@ function generateMarkdown(data) {
 
   ## Questions??
   ## Contact me here :
-  * [${data.gitHubUsername}](http://github/com/${data.gitHubUsername})
-  * ${data.email}`;
+  [${data.gitHubUsername}](http://github/com/${data.gitHubUsername})
+  ${data.email}`;
 
 }
 
