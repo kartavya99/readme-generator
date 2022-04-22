@@ -29,7 +29,27 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  
+  if (license = licenseArr[0]) {
+    return `[${licenseArr[0]}](https://www.boost.org/LICENSE_1_0.txt)`;
+  }
+  else if(license = licenseArr[1]) {
+    return `[${licenseArr[1]}](https://opensource.org/licenses/MPL-2.0)`;
+  }
+  else if(license = licenseArr[2]) {
+    return `[${licenseArr[2]}](https://opensource.org/licenses/MIT)`;
+  }
+  else if(license = licenseArr[3]) {
+    return `[${licenseArr[3]}](https://opensource.org/licenses/IPL-1.0)`;
+  }
+  else if(license = licenseArr[4]) {
+    return `[${licenseArr[4]}](https://opensource.org/licenses/EPL-1.0)`;
+  }
+  else if(license = licenseArr[5]) {
+    return `[${licenseArr[5]}](https://opendatacommons.org/licenses/pddl/)`;
+  } 
+  else {
+    return "";
+  }
 }
 
 // TODO: Create a function that returns the license section of README
