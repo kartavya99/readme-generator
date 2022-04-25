@@ -96,7 +96,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.test}
 
-  ## Questions??
+  # Questions??
   ## Contact me here :
 
   [${data.gitHubUsername}](http://github/com/${data.gitHubUsername})
