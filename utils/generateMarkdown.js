@@ -67,13 +67,13 @@ function generateMarkdown(data) {
 
   
   ## Table of Contents
-  *[License](#license)
-  *[Description](#Description)
-  *[Installation](#installation)
-  *[Usage](#Usage)
-  *[How to Contribute](#how-to-contribute)
-  *[Test](#tests)
-  *[Question??](#questions)
+  * [License](#license)
+  * [Description](#Description)
+  * [Installation](#installation)
+  * [Usage](#Usage)
+  * [How to Contribute](#how-to-contribute)
+  * [Test](#tests)
+  * [Question??](#questions)
 
   ## License
   ${renderLicenseSection(data.license)}
