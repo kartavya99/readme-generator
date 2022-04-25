@@ -67,6 +67,7 @@ function generateMarkdown(data) {
 
   
   ## Table of Contents
+
   * [License](#license)
   * [Description](#Description)
   * [Installation](#installation)
@@ -97,7 +98,9 @@ function generateMarkdown(data) {
 
   ## Questions??
   ## Contact me here :
+
   [${data.gitHubUsername}](http://github/com/${data.gitHubUsername})
+  
   ${data.email}`;
 
 }
