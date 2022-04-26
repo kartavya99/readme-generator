@@ -21,12 +21,17 @@
 
   # Description
   It generates a comprehensive README file based on user input.
+  ## Example Video link
+  [Video Demo](https://drive.google.com/file/d/1jrO3pZNQ_IQR2-41dtPLCiKo-wpsuLq-/view)
+  ## URL to github repository
+  [Github Repository](https://github.com/kartavya99/readme-generator.git)
 
   ## Installation
   clone the repository
 
   ## Usage
   Simply ope the index.js in node and follow th prompts
+
 
   ## How to Contribute
   no other requirement for contribution
