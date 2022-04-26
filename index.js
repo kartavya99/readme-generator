@@ -82,7 +82,7 @@ function init() {
         .prompt(questions)
         .then((data) => { 
             console.log('answers captured');
-            writeToFile('./utils/READMe.md', generateMarkdown(data));
+            writeToFile('./utils/README.md', generateMarkdown(data));
         })
     
 }
