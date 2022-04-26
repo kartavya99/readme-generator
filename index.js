@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const emailValidator = require("email-validator");
 
 
 
@@ -58,7 +59,14 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Please enter the email address:'
+        message: 'Please enter the email address:',
+        validate: (value) => {
+            if(emailValidator.validate(value)){
+                return true;
+            } else {
+                return "Please enter a valid email address";
+            }
+        }
     },  
 
 ];
